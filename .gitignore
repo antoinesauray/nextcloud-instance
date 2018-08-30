@@ -2,3 +2,4 @@ storage.config.php
 init.sql
 db.env
 domains.config.php
+config.php
