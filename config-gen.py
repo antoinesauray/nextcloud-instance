@@ -29,7 +29,7 @@ def main(trusted_domains, storage_class, bucket, region, aws_key, aws_secret, pa
     for domain in trusted_domains:
         config_str+= "%d => '%s'," % (index, domain)
         index += 1
-    config_str += """,
+    config_str += """),
     'objectstore' => array (
         'class' => 'OC\\Files\\ObjectStore\\%s',
         'arguments' => array (
