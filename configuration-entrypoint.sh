@@ -1,6 +1,7 @@
 #!/bin/bash
-mkdir /var/www/html/data
-chown -R www-data /var/www/html/data
+mkdir -p /var/www/html/data
+mkdir -p /var/www/html/config
+chown -R www-data /var/www/html
 : ${STORAGE:?"STORAGE needs to be defined"}
 : ${BUCKET:?"BUCKET needs to be defined"}
 : ${REGION:?"REGION needs to be defined"}
