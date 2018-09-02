@@ -17,5 +17,6 @@ mkdir -p /var/www/html/config
 : ${TRUSTED_DOMAIN:?"TRUSTED_DOMAIN needs to be defined"}
 
 python /config-gen.py --storage=$STORAGE --bucket=$BUCKET --region=$REGION --aws-key=$AWS_KEY --aws-secret=$AWS_SECRET --password-salt=$PASSWORD_SALT --nextcloud-secret=$NEXTCLOUD_SECRET --dbname=$DBNAME --dbhost=$DBHOST --dbport=$DBPORT --dbuser=$DBUSER --dbpass=$DBPASS  --trusted-domain=$TRUSTED_DOMAIN > /var/www/html/config/config.php
+touch /var/www/html/data/.ocdata
 chown -R www-data /var/www/html
 /entrypoint.sh $@
