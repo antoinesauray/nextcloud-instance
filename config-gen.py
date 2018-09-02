@@ -51,7 +51,7 @@ def main(trusted_domains, storage_class, bucket, region, aws_key, aws_secret, pa
     'dbport' => '%s',
     'dbtableprefix' => '',
     'dbuser' => '%s',
-    'dbpass' => '%s',
+    'dbpassword' => '%s',
     'installed' => true,
 );    
     """ % (storage_class, bucket, region, aws_key, aws_secret, password_salt, nextcloud_secret, dbname, dbhost, dbport, dbuser, dbpass)
